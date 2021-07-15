@@ -1,0 +1,160 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+/******HEADER SECTION*********/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#header-logo {
+  height: 77px;
+}
+
+header a {
+  color: white;
+  margin-left: 24px;
+}
+header a:hover {
+  color: white;
+}
+header a:visited {
+  color: white;
+}
+#hero-section {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu-icon {
+  width: 100px;
+}
+.solid-header {
+  position: fixed;
+  background-color: #c69572;
+}
+/****** HERO SECTION*********/
+#logo {
+  width: 256px;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #4133392c;
+  height: 100vh;
+}
+#arrow-down {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 64px;
+  color: white;
+}
+
+/******INTRO SECTION*********/
+#intro-section {
+  background: #eae7de;
+}
+/******ABOUT SECTION*********/
+#about-bg1 {
+  background-image: url("greatplace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 480px;
+}
+#about-bg2 {
+  background-image: url("coffe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 640px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #about-bg2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #0000009d;
+  }
+  .tamni-tekst {
+    color: rgb(204, 129, 16);
+  }
+}
+/******MENU SECTION*********/
+
+#menu-section {
+  background-color: #eae7de;
+}
+
+/******CONTACT SECTION*********/
+#contact-info-bg1 {
+  background: linear-gradient(to right, #36313782, #36313782),
+    url("wereopen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+#contact-info-bg2 {
+  background-color: #312423a8;
+}
+/******MAP SECTION*********/
+
+/******FOOTER SECTION*********/
+footer {
+  background-color: #312423;
+}
+footer a img {
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+#social-icons {
+  text-align: center !important;
+  margin-top: 8px;
+}
+
+/******MOBILE SECTION*********/
+#mobile-meni {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #312423ed;
+  z-index: 2;
+
+  display: none;
+}
+
+#mobile-meni a {
+  color: white;
+}
+
+#mobile-meni:hover {
+  color: rgb(175, 171, 171);
+}
+
+#mobile-meni #close-btn {
+  position: absolute;
+  right: -4px;
+  top: -11px;
+  width: 166px;
+}
